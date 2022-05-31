@@ -39,14 +39,21 @@ function search() {
 const arrow_2 = document.querySelector("#arrow_2");
 const arrow_1 = document.querySelector("#arrow_1");
 let page = 0;
-
+   document.getElementById("arrow_1").style.display = "none";
 
   arrow_1.onclick = function() {
     loadData(pageSearch+ '&s=' + input.value + '&page=' + --page);
+    document.getElementById("arrow_1").style.display = "none";
     console.log(page);
   };
   arrow_2.onclick = function() {
         loadData(pageSearch+ '&s=' + input.value + '&page=' + ++page);
+        document.getElementById("arrow_1").style.display = "block";
   };
+//     if(page === 0){
+//        document.getElementById("arrow_1").style.display = "none";
+//   }
+//   else{
+//       document.getElementById("arrow_1").style.display = "block";
+//   }
 
-// arrow_2.onclick = function()
