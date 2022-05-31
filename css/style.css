@@ -1,0 +1,189 @@
+html,
+body {
+margin:0;
+display: block;
+background-color: white;
+color: black;
+}
+.container{
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 90px;
+      background-color: aqua;
+}
+.name {
+      font-size: 32px;
+      font-family: 'Comfortaa', cursive;
+      padding: 0px 0px 0px 10px;
+}
+#search_box {
+      position: relative;
+      width: 350px;
+      align-items: center;
+      padding: 0px 20px 0px 0px;
+}
+
+#search_box input {
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 25px;
+      outline: none;
+      transition: all 0.30s ease-in-out;
+      border: 1px solid #DDDDDD;
+}
+#middle{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      /* align-items: flex-start; */
+      background-color: black;
+}
+#middle img{
+      padding: 10px;
+}
+#middle div{
+      padding: 0px 0px 5px 0px;
+}
+#middle div div{
+      color: beige;
+      display: flex;
+      justify-content: center;
+      padding: 5px 0px 0px 0px;
+}
+
+
+/* КНОПКА ПРОБА 1 */
+#arrow_1 {
+      cursor: pointer;
+      position: relative;
+      width: 80px;
+      height: 50px;
+      margin: 20px;
+}
+
+#arrow_1 div {
+      position: relative;
+      top: 20px;
+      width: 90px;
+      height: 10px;
+      background-color: #337AB7;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+      left: 0;
+      display: block;
+}
+
+#arrow_1 div::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 10px;
+      top: 11px;
+      /* right: -8px; */
+      left: -8px;
+      background-color: #337AB7;
+      transform: rotate(45deg);
+}
+
+#arrow_1 div::before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 10px;
+      /* top: 11px;
+      right: -8px; */
+      top: -11px;
+      left: -8px;
+      background-color: #337AB7;
+      /* box-shadow: 0 3px 5px rgba(0, 0, 0, .2); */
+      transform: rotate(-45deg);
+}
+
+#arrow_1:hover {
+      animation: arrow_1 1s linear infinite;
+}
+
+@keyframes arrow_1 {
+      0% {
+            left: 0;
+      }
+
+      50% {
+            left: 10px;
+      }
+
+      100% {
+            left: 0;
+      }
+}
+/* КНОПКА ПРОБА 2 */
+#arrow_2 {
+      cursor: pointer;
+      position: relative;
+      width: 80px;
+      height: 50px;
+      margin: 20px 30px 20px 20px;
+}
+
+#arrow_2 div {
+      position: relative;
+      top: 20px;
+      width: 90px;
+      height: 10px;
+      background-color: #337AB7;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+      left: 0;
+      display: block;
+}
+
+#arrow_2 div::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 10px;
+      top: -11px;
+      right: -8px;
+      background-color: #337AB7;
+      transform: rotate(45deg);
+}
+
+#arrow_2 div::before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 10px;
+      top: 11px;
+      right: -8px;
+      background-color: #337AB7;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+      transform: rotate(-45deg);
+}
+
+#arrow_2:hover {
+      animation: arrow_2 1s linear infinite;
+}
+
+@keyframes arrow_2 {
+      0% {
+            left: 0;
+      }
+
+      50% {
+            left: 10px;
+      }
+
+      100% {
+            left: 0;
+      }
+}
+#arrow_two {
+      display: flex;
+      justify-content: space-around;
+      background: black;
+}
